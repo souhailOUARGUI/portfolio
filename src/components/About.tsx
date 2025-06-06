@@ -52,15 +52,15 @@ export default function About({ personalInfo }: AboutProps) {
                 </p>
                 
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                  I'm passionate about creating efficient, scalable, and user-friendly applications. 
-                  My journey in software engineering has equipped me with a strong foundation in 
-                  various programming languages and frameworks, and I'm always eager to learn 
+                  I&apos;m passionate about creating efficient, scalable, and user-friendly applications.
+                  My journey in software engineering has equipped me with a strong foundation in
+                  various programming languages and frameworks, and I&apos;m always eager to learn
                   new technologies and tackle challenging problems.
                 </p>
 
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                  When I'm not coding, you can find me contributing to open source projects, 
-                  participating in hackathons, or mentoring fellow students. I believe in the 
+                  When I&apos;m not coding, you can find me contributing to open source projects,
+                  participating in hackathons, or mentoring fellow students. I believe in the
                   power of technology to make a positive impact on the world.
                 </p>
 

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaStar } from 'react-icons/fa';
+import Image from 'next/image';
 import { Project } from '@/types';
 
 interface ProjectsProps {
@@ -47,7 +48,7 @@ export default function Projects({ projects }: ProjectsProps) {
             </h2>
             <div className="w-24 h-1 bg-indigo-600 mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Here are some of the projects I've worked on that showcase my skills and passion for development.
+              Here are some of the projects I&apos;ve worked on that showcase my skills and passion for development.
             </p>
           </motion.div>
 
@@ -66,10 +67,11 @@ export default function Projects({ projects }: ProjectsProps) {
                     <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                     <div className="relative bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden aspect-video">
                       {project.imageUrl ? (
-                        <img
+                        <Image
                           src={project.imageUrl}
                           alt={project.title}
-                          className="w-full h-full object-cover"
+                          fill
+                          className="object-cover"
                           onError={(e) => {
                             e.currentTarget.src = `https://via.placeholder.com/600x400/6366f1/ffffff?text=${encodeURIComponent(project.title)}`;
                           }}

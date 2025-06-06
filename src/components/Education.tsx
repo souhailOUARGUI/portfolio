@@ -53,7 +53,7 @@ export default function Education({ education }: EducationProps) {
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-indigo-200 dark:bg-indigo-800 hidden md:block"></div>
 
             <div className="space-y-12">
-              {education.map((edu, index) => (
+              {education.map((edu) => (
                 <motion.div
                   key={edu.id}
                   variants={itemVariants}

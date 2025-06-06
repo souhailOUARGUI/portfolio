@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaBriefcase, FaCalendarAlt } from 'react-icons/fa';
 import type { Experience } from '@/types';
 
 interface ExperienceProps {
@@ -63,7 +63,7 @@ export default function Experience({ experiences }: ExperienceProps) {
             </h2>
             <div className="w-24 h-1 bg-indigo-600 mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              My professional journey and the hands-on experience I've gained in the industry.
+              My professional journey and the hands-on experience I&apos;ve gained in the industry.
             </p>
           </motion.div>
 
@@ -72,7 +72,7 @@ export default function Experience({ experiences }: ExperienceProps) {
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-indigo-200 dark:bg-indigo-800 hidden md:block"></div>
 
             <div className="space-y-12">
-              {experiences.map((exp, index) => (
+              {experiences.map((exp) => (
                 <motion.div
                   key={exp.id}
                   variants={itemVariants}
@@ -160,8 +160,8 @@ export default function Experience({ experiences }: ExperienceProps) {
                 Looking for New Opportunities
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-                I'm always interested in new challenges and opportunities to grow. 
-                If you have an exciting project or position, I'd love to hear from you!
+                I&apos;m always interested in new challenges and opportunities to grow.
+                If you have an exciting project or position, I&apos;d love to hear from you!
               </p>
               <motion.a
                 href="#contact"

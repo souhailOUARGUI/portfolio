@@ -51,7 +51,7 @@ export default function Contact({ personalInfo }: ContactProps) {
             </h2>
             <div className="w-24 h-1 bg-indigo-600 mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              I'm always open to discussing new opportunities, collaborations, or just having a chat about technology.
+              I&apos;m always open to discussing new opportunities, collaborations, or just having a chat about technology.
             </p>
           </motion.div>
 

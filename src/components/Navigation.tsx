@@ -4,22 +4,22 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes, FaMoon, FaSun } from 'react-icons/fa';
 
+const navItems = [
+  { name: 'Home', href: '#home' },
+  { name: 'About', href: '#about' },
+  { name: 'Skills', href: '#skills' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Education', href: '#education' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Clubs', href: '#clubs' },
+  { name: 'Awards', href: '#awards-activities' },
+  { name: 'Contact', href: '#contact' },
+];
+
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const [isDark, setIsDark] = useState(false);
-
-  const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Education', href: '#education' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Clubs', href: '#clubs' },
-    { name: 'Awards', href: '#awards-activities' },
-    { name: 'Contact', href: '#contact' },
-  ];
 
   useEffect(() => {
     // Check for saved theme preference or default to light mode

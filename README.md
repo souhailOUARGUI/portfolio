@@ -163,7 +163,7 @@ The portfolio is fully responsive and tested on:
 - Tablet (768px - 1023px)
 - Mobile (320px - 767px)
 
-## 🚀 Deployment
+<!-- ## 🚀 Deployment
 
 ### Deploy on Vercel (Recommended)
 
@@ -191,4 +191,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Support
 
-If you have any questions or need help customizing your portfolio, feel free to reach out!
+If you have any questions or need help customizing your portfolio, feel free to reach out! -->

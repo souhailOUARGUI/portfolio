@@ -49,7 +49,7 @@ export default function Clubs({ clubs }: ClubsProps) {
           </motion.div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {clubs.map((club, index) => (
+            {clubs.map((club) => (
               <motion.div
                 key={club.id}
                 variants={itemVariants}

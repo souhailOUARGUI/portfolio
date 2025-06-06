@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaTwitter, FaGlobe, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import Image from 'next/image';
 import { PersonalInfo } from '@/types';
 
 interface HeroProps {
@@ -49,11 +50,12 @@ export default function Hero({ personalInfo }: HeroProps) {
           className="mb-8"
         >
           {personalInfo.profileImage && (
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg">
-              <img
+            <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg relative">
+              <Image
                 src={personalInfo.profileImage}
                 alt={personalInfo.name}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
                 onError={(e) => {
                   // Fallback to a placeholder if image fails to load
                   e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(personalInfo.name)}&size=128&background=6366f1&color=ffffff`;
